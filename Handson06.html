@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands On 06</title>
+</head>
+
+<body>
+
+    <h1> Hands On 06</h1>
+    <p>Leia o número qualquer e mostre se ele é par ou ímpar</p>
+    Digite um número: <input type="number" id="numero">
+    <button onclick="imparPar()">Ímpar ou Par</button>
+
+    <script>
+
+        function imparPar() {
+
+            var numero = parseInt(document.getElementById("numero").value);
+            var resto = (numero % 2)
+            var divisao = (numero / 2)
+
+            if (resto === 0) {
+
+                alert(`O número ${numero} é par! `)
+
+            } else {
+
+                alert(`O número ${numero} é ímpar! `)
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
