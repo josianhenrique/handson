@@ -25,13 +25,15 @@
             var nota2 = parseFloat(document.getElementById("nota2").value)
             var media = (nota1 + nota2) / 2;
 
-            if (media >= 7) {
+            if (media >= 7 && media <=9) {
 
                 alert(`A média do aluno é ${media}. O aluno está Aprovado!`)
 
-            } else {
+            } else if(media == 10)  {
 
                 alert(`A média do aluno é ${media}. O aluno está Reprovado!`)
+            }else{
+                alert("")
             }
 
 
